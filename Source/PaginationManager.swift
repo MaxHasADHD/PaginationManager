@@ -42,7 +42,7 @@ public protocol PaginationManagerDelegate: class {
     ///
     /// - parameter manager:   The pagination manager.
     /// - parameter reset:     The reset block for the pagination manager. Used to tell the pagination manager to reset its state.
-    func paginationManagerDidExceedThreshold(manager: PaginationManager, reset: PaginationManagerResetBlock)
+    func paginationManagerDidExceedThreshold(manager: PaginationManager, reset: @escaping PaginationManagerResetBlock)
 }
 
 /// Private enum defining the possible states of the pagination manager.
